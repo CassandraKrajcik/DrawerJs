@@ -18,7 +18,7 @@ Here are the release notes of the deployment since 2015: [DrawerJs-Release Notes
 
 ## Contribute?
 
-If you want to contribute or just help with PR, please contact me!
+If you want to contribute or just help with PR, please contact me*
 
 ## Do you know our other JavaScript library?
 
@@ -131,3 +131,4 @@ Requirements: node.js, npm, git
 This will also watch for changes  in `src` directory and recompile everything.
 
 
+ 
