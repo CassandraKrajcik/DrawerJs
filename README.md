@@ -1,134 +1,27 @@
-# DrawerJS
-
-DrawerJS is a HTML5 widget that allows drawing and writing on HTML5 canvas elements. Mobile devices are fully supported. 
-
-It is a customizable WYSIWYG HTML canvas editor for freehand drawing and creating sketches with simple shapes.
-
-## What is DrawerJs? How can I use it?
-
-Here you will find more informations about features and a short faq: [DrawerJs](https://www.DrawerJs.com)
-
-And here you'll find some examples and you can test it live: [DrawerJs on GitHub](https://carstenschaefer.github.io/DrawerJs/)
-
-Here you will find a detailed documentation about the usage and its configuration: [DrawerJs-Docs](https://github.com/carstenschaefer/DrawerJs/wiki)
-
-## Release Notes
-
-Here are the release notes of the deployment since 2015: [DrawerJs-Release Notes](https://www.drawerjs.com/release-notes)
-
-## Contribute?
-
-If you want to contribute or just help with PR, please contact me*
-
-## Do you know our other JavaScript library?
-
-Check out our imager uploader [ImagerJs](https://www.imagerjs.com)!
+# 极客大学「算法训练营-第11期」作业提交仓库
 
 
-# Documentation:
+## 讲师课件下载地址
 
-[Distribution versions](#plugin-versions)
+请大家通过该链接查看讲师课件并进行下载，课件链接:https://pan.baidu.com/s/1NBNdjXI0tjDzNKXf8fvaQQ  密码:kmxb
 
-[Configuration options](#configuration)
+## 仓库目录结构说明
 
-[Development environment setup](#development-how-to)
+1. `week01/` 代表第一周作业提交目录，以此类推。
+2. 请在对应周的目录下新建或修改自己的代码作业。
+2. 每周均有一个 `REDAME.md` 文档，你可以将自己当周的学习心得以及做题过程中的思考记录在该文档中。
 
-[Source code files and build system overview](./ARCHITECTURE-DIRECTORIES.md)
-
-[Source code architecture overview](./ARCHITECTURE.md)
-
-## Plugin versions
-
-This plugin distributes in two versions:
-
-### Redactor editor plugin
-
-Could be embedded to page as follows:
-
-    <link rel="stylesheet" href="dist/drawerJs.css"/>
-
-    <script src="dist/drawerJs.redactor.js"></script>
-
-    <!-- or minified version: -->
-
-    <script src="dist/drawerJs.redactor.min.js"></script>
-
-For information about how to build everything to the `dist` folder please see [Development how-to](#development-how-to)
-
-Then `drawer` name could be provided to redactor's config into the `plugins` section:
-
-    $('.redactor').redactor({
-        buttons: [
-            'bold',
-            'html',
-            'image'
-        ],
-        plugins: [
-            'video',
-            'drawer', // << here we specify that redactor should load this plugin
-            'opensave',
-            'contexttoolbar'
-        ],
-        drawer: {
-            // drawer config section here
-            activeColor: '#19A6FD' // default drawing color
-        }
-    });
-
-For working example please see `demo` folder.
-
-For more information about drawer config section please see [Configuration](#configuration)
-
-### Standalone version
-
-Could be embedded to page as follows:
-
-    <link rel="stylesheet" href="dist/drawerJs.css"/>
-
-    <script src="dist/drawerJs.standalone.js"></script>
-
-    <!-- or minified version: -->
-
-    <script src="dist/drawerJs.standalone.min.js"></script>
-
-For information about how to build everything to the `dist` folder please see [Development how-to](#development-how-to)
-
-Then drawer could be appended to any html container like this:
-
-    var canvas = new DrawerJs.Drawer(null, {
-        // drawer config section here
-        activeColor: '#19A6FD' // default drawing color
-    }, 600, 600); // height and width of drawer will be 600x600
-
-    $('#some_id').append(canvas.getHtml());
-    canvas.onInsert();
-
-Where `#some_id` is any DOM element id.
-
-For working example please see `examples/standalone` folder.
-
-For more information about drawer config section please see [Configuration](#configuration)
-
-## Configuration
-
-When you finish with [setting up development environment](#development-how-to)
-you will have dist folder with everything built up.
-Look there for `docs` folder, find `index.html` and open it.
-
-Then the link below will work.
-
-Please look at [CanvasElement documentation](DrawerJs.CanvasElement.html) for options description.
-
-
-##  Development how-to:
-
-Requirements: node.js, npm, git
-
-`npm install` to install all npm/bower dependencies.
-
-`npm start` to compile everything to `dist` folder.
-
-This will also watch for changes  in `src` directory and recompile everything.
-
-
+## 作业提交规则
  
+1. 先将本仓库 Fork 到自己 GitHub 账号下。
+2. 将 Fork 后的仓库 Clone 到本地，然后在本地仓库中对应周的目录下新建或修改自己的代码作业，当周的学习总结写在对应周的README.md文件里。
+3. 在本地仓库完成作业后，push 到自己的 GitHub 远程仓库。
+4. 最后将远程仓库中当周的作业链接，按格式贴到班级仓库对应学习周的issue下面。
+5. 提交issue请务必按照规定格式进行提交，否则作业统计工具将抓取不到你的作业提交记录。 
+
+详细的作业提交流程可以查阅：https://shimo.im/docs/m5rtM8K8rNsjw5jk/ 
+
+
+## 注意事项
+
+ 如果对 Git 和 GitHub 不太了解，请参考 [Git 官方文档](https://git-scm.com/book/zh/v2) 或者极客时间的[《玩转 Git 三剑客》](https://time.geekbang.org/course/intro/145)视频课程。
